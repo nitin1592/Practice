@@ -3,7 +3,7 @@ package practice;
 public class StringSpiral {
 
 	public static void main(String[] args) {
-		int rows=1, r=1, cols=8, c=8;
+		int rows=3, r=3, cols=8, c=8;
 		int n =6;
 		String s = "abcdef";
 		char[][] result = new char[rows][cols];

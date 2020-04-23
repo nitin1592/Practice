@@ -18,7 +18,7 @@ public class BlockingQueue {
 			wait();
 		}
 		queue.add(obj);
-		if (queue.size() == 0) {
+		if (queue.size() == 1) {
 			notifyAll();
 		}
 	}

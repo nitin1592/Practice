@@ -11,7 +11,7 @@ public class Task implements Runnable{
 	public void run() {
 		try {
 			System.out.println("This is " + name);
-			Thread.sleep(2000);
+			Thread.sleep(0);
 		}
 		catch (InterruptedException e) {
 			e.printStackTrace();

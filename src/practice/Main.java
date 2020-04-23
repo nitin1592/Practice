@@ -11,6 +11,41 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		new CyclicShifts().performCyclicShifts(7881, 3, "R");
+		
+//		System.out.println(new ScrambledString().isScramble("ab", "ba"));
+		
+//		ArrayList<String> al = new ArrayList<String>();
+//		al.add("am");	al.add("fasgoprn");	al.add("lvqsrjylg");	al.add("rzuslwan");	al.add("xlaui");
+//		ArrayList<String> result = new StringJustify().fullJustify(al, 12);
+//		for (String s : result)
+//			System.out.println(s);
+//		System.out.println(result.get(1).length() + "  " + result.get(2).length());
+		
+//		int[] stones = {2, 7, 4, 1, 8, 1};
+//		System.out.println(new Stone().lastStoneWeight(stones));
+		
+//		long n=72, k=80;
+//		long q1=0, q2=1, d=1;
+//		
+//        while ((q1+q2)<k) {
+//            long x = (long) Math.floor((Math.log(n-q2) / Math.log(2)));
+//            d += x;
+//            q2 = (long) Math.pow(2.0, d-1);
+//            if (q1+q2 > k)
+//            	break;
+//            else {
+//            	q1 += n;
+//            	q2 = 1;
+//            	d -= 1;
+//            }
+//            
+//        }
+//        System.out.println(d);
+		
+//		System.out.println(new ZigZagString().convert("PAYPALISHIRING", 3));
+		
+//		new PrintRectangles().printReactangle(5, 8);
 		
 		/** Tushar Bday Bombs */
 //		ArrayList<Integer> B = new ArrayList<Integer>();

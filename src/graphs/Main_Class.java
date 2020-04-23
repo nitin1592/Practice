@@ -1,6 +1,7 @@
 package graphs;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 
 import practice.Pair;
@@ -11,14 +12,17 @@ public class Main_Class {
 		
 		/** Find cycle in undirected graph using union and find */
 		
-		GraphEdges ge = new GraphEdges(3, 3);
-		ge.edges[0].src = 0;
-		ge.edges[0].dest = 1;
-		ge.edges[1].src = 1;
-		ge.edges[1].dest = 2;
-		ge.edges[2].src = 2;
-		ge.edges[2].dest = 0;
-		System.out.println(ge.isCyclic());
+		int i = -17;
+		System.out.println(i%16);
+		
+//		GraphEdges ge = new GraphEdges(3, 3);
+//		ge.edges[0].src = 0;
+//		ge.edges[0].dest = 1;
+//		ge.edges[1].src = 1;
+//		ge.edges[1].dest = 2;
+//		ge.edges[2].src = 2;
+//		ge.edges[2].dest = 0;
+//		System.out.println(ge.isCyclic());
 		
 		/** Nodes to be deleted to disconnect 2 nodes */
 //		Graph g = new Graph(6);
