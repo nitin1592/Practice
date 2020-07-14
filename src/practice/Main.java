@@ -1,17 +1,17 @@
 package practice;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Stack;
-
 public class Main {
 
 	public static void main(String[] args) {
+//		int[][] grid = {	
+//						{0, 1, 0, 0},
+//						{1, 1, 1, 0},
+//						{0, 1, 0, 0},
+//						{1, 1, 0, 0}
+//						};
+//		System.out.println(new IslandPerimeter().islandPerimeter(grid));
 		
-		new CyclicShifts().performCyclicShifts(7881, 3, "R");
+//		new CyclicShifts().performCyclicShifts(7881, 3, "R");
 		
 //		System.out.println(new ScrambledString().isScramble("ab", "ba"));
 		
