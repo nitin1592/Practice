@@ -1,8 +1,17 @@
 package practice;
 
+import java.util.List;
+
 public class Main {
 
 	public static void main(String[] args) {
+		String[] products = {"mobile","mouse","moneypot","monitor","mousepad"};
+		String searchWord = "mouse";
+		List<List<String>> result = new SearchSuggestion().suggestedProducts(products, searchWord);
+		
+		for (List<String> list : result)
+			System.out.println(list.toString());
+		
 //		int[][] grid = {	
 //						{0, 1, 0, 0},
 //						{1, 1, 1, 0},
