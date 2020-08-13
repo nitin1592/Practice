@@ -1,10 +1,15 @@
 package practice;
 
+<<<<<<< HEAD
 import java.util.HashMap;
+=======
+import java.util.List;
+>>>>>>> 527253a9c2a4d0141dda06efa8a77589cd70dc30
 
 public class Main {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		
 		String s = "Pallet a= 12 Rack";
 		String[] arr = s.split("=");
@@ -36,6 +41,23 @@ public class Main {
 		
 //		System.out.println();
 //		System.out.println(new RangeBitWise().rangeBitwiseAnd(2147483646, 2147483646));
+=======
+		String[] products = {"mobile","mouse","moneypot","monitor","mousepad"};
+		String searchWord = "mouse";
+		List<List<String>> result = new SearchSuggestion().suggestedProducts(products, searchWord);
+		
+		for (List<String> list : result)
+			System.out.println(list.toString());
+		
+//		int[][] grid = {	
+//						{0, 1, 0, 0},
+//						{1, 1, 1, 0},
+//						{0, 1, 0, 0},
+//						{1, 1, 0, 0}
+//						};
+//		System.out.println(new IslandPerimeter().islandPerimeter(grid));
+		
+>>>>>>> 527253a9c2a4d0141dda06efa8a77589cd70dc30
 //		new CyclicShifts().performCyclicShifts(7881, 3, "R");
 		
 //		System.out.println(new ScrambledString().isScramble("ab", "ba"));
