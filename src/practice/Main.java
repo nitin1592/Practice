@@ -1,10 +1,47 @@
 package practice;
 
+<<<<<<< HEAD
+import java.util.HashMap;
+=======
 import java.util.List;
+>>>>>>> 527253a9c2a4d0141dda06efa8a77589cd70dc30
 
 public class Main {
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
+		
+		String s = "Pallet a= 12 Rack";
+		String[] arr = s.split("=");
+		System.out.println(arr[0]);
+		
+		String[] arr1 = arr[1].split(" ");
+//		System.out.println(arr1[0]);
+		System.out.println(arr1[1]);
+		System.out.println(arr1[2]);
+        
+		
+//		int[] arr = {-1, -4, -5, -1, -8};
+//		
+//		int[] solve = new int[arr.length];
+//		
+//		solve[0] = arr[0];
+////		int max = Integer.MIN_VALUE;
+////		int min = Integer.MAX_VALUE;
+//		
+//		for (int i=1; i<arr.length; i++) {
+//			solve[i] = Math.max(solve[i-1]+arr[i], Math.max(arr[i], solve[i-1]));
+//		}
+//		System.out.println(solve[arr.length-1]);
+//		
+//		for (int i=1; i<arr.length; i++) {
+//			solve[i] = Math.min(solve[i-1]+arr[i], Math.min(arr[i], solve[i-1]));
+//		}
+//		System.out.println(solve[arr.length-1]);
+		
+//		System.out.println();
+//		System.out.println(new RangeBitWise().rangeBitwiseAnd(2147483646, 2147483646));
+=======
 		String[] products = {"mobile","mouse","moneypot","monitor","mousepad"};
 		String searchWord = "mouse";
 		List<List<String>> result = new SearchSuggestion().suggestedProducts(products, searchWord);
@@ -20,6 +57,7 @@ public class Main {
 //						};
 //		System.out.println(new IslandPerimeter().islandPerimeter(grid));
 		
+>>>>>>> 527253a9c2a4d0141dda06efa8a77589cd70dc30
 //		new CyclicShifts().performCyclicShifts(7881, 3, "R");
 		
 //		System.out.println(new ScrambledString().isScramble("ab", "ba"));
