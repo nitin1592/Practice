@@ -5,6 +5,42 @@ import java.util.HashMap;
 
 public class FamilyTree {
 	HashMap<String, Node> mothersMap;
+	
+	public String addChild(String mother, String childToAdd, String gender) {
+		String result = "";
+		try {
+			if (!mothersMap.containsKey(mother))
+				result = "PERSON_NOT_FOUND";
+			else {
+				Node parent = mothersMap.get(mother);
+				
+				if (parent.isMale || parent.spouse==null)
+					result = "CHILD_ADDITION_FAILED";
+				else {
+					boolean isMale = gender.equalsIgnoreCase("male");
+					Node newNode = new Node(childToAdd, parent, null, isMale);
+					parent.children.add(newNode);
+					result = "CHILD_ADDITION_SUCCEEDED";
+				}
+			}
+		}
+		catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("error in addition of child");
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	public void getRelation(String name, String relation) {
+		
+	}
+	
+	public void printMap() {
+		System.out.println(mothersMap.size());
+		System.out.println(mothersMap.toString());
+	}
+	
 	public void initialiseFamilyTree() {
 		mothersMap = new HashMap<String, Node>();
 		
@@ -96,25 +132,6 @@ public class FamilyTree {
 		
 		Node kriya = new Node("Kriya", krpi, null, true);
 		Node krithi = new Node("Krithi", krpi, null, false);
-		jnki.children.addAll(Arrays.asList(kriya, krithi));
-		
-		
-		/* Adding tree rooted at 4th child */
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		krpi.children.addAll(Arrays.asList(kriya, krithi));
 	}
 }
